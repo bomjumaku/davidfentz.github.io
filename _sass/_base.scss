@@ -110,19 +110,19 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: transparent;
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba(rgb(255, 255, 255), .7);
             &:hover,
             &:focus {
-                color: white;
+                color: $theme-primary;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(rgb(0, 0, 0), .7);
             &:hover {
-                color: white;
+                color: $theme-primary;
             }
         }
         &.affix {
@@ -155,7 +155,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/top_down_mitch.jpg');
     text-align: center;
     color: white;
     .header-content {
