@@ -6,22 +6,36 @@ layout: project
       max-width: 100%;
       height: auto;
     }
-    iframe{
-      max-width: 100%;
-      height: auto;
+    .video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+    .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
     }
 </style>
 <section class="bg-primary" id="about">
     <div class="container">
         <h2 class="section-heading">RF Replay</h2>
-        <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube-nocookie.com/embed/CC9lPLH7F9M" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
+        <div class="video-container">
+            <iframe 
+            class="responsive-iframe"
+            src="https://www.youtube-nocookie.com/embed/CC9lPLH7F9M" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        
         <p>
             The video there is the end product of a process that lasted months, and took me from 100% noob to 
             90% noob within the world of software defined radio (SDR). There's actually a lot of work that goes into 
